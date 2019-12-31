@@ -39,7 +39,7 @@ html{ font-size: 100%; height: 100%; width: 100%; overflow-x: hidden; margin: 0p
 
 
 body{ font-size: 16px; font-family: 'Poppins', serif; width: 100%; margin: 0;
-	font-weight: 400; word-wrap: break-word; color: #333;
+	font-weight: 400; word-wrap: break-word; color: #333333;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
 h1,h2,h3{ font-family: 'Poppins', cursive; }
 
-p{ line-height: 1.6; font-size: 1em; font-weight: 400; color: #777; }
+p{ line-height: 1.6; font-size: 1em; font-weight: 400; color: #333; }
 
 h1{ font-size: 4em; line-height: 1; }
 h2{ font-size: 2.2em; line-height: 1.1; }
@@ -143,7 +143,7 @@ b.max-bold{ font-weight: 700; }
 .intro{ color: #fff; }
 
 
-.intro .profile-img{ max-width: 400px; border-radius: 5px; overflow: hidden; }
+.intro .profile-img{ max-width: 400px; border-radius: 20px; overflow: hidden; }
 
 .intro .information > li{ display: block; margin: 5px 0; }
 
@@ -249,7 +249,7 @@ b.max-bold{ font-weight: 700; }
 	z-index: 1; background-image: url(../../images/slider-4-1920x600.jpg); color: #fff; }
 
 .quoto-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0;
-	right: 0; background: rgba(255,255,255, 0.5); }
+	right: 0; background: rgba(0,0,0, 0.6); }
 
 .quoto-section .icon{ margin-bottom: 20px; height: 40px; width: 40px; line-height: 40px;
 	border-radius: 30px; background: #FFAB00; color: #fff; }
