@@ -22,7 +22,36 @@
 	<link href="03-cv-business/css/styles.css" rel="stylesheet">
 
 	<link href="03-cv-business/css/responsive.css" rel="stylesheet">
-
+	<script>
+	function scrollA(){
+	  location.href = "#";
+	  location.href = "#About";
+	}
+	function scrollW(){
+	  location.href = "#";
+	  location.href = "#Work";
+	}
+	function scrollP(){
+	  location.href = "#";
+	  location.href = "#Port";
+	}
+	function scrollE(){
+	  location.href = "#";
+	  location.href = "#Edu";
+	}
+	function scrollS(){
+	  location.href = "#";
+	  location.href = "#Skills";
+	}
+	function scrollM(){
+	  location.href = "#";
+	  location.href = "#More";
+	}
+	function showMore(id){
+	  location.href = "#";
+	  location.href = "#"+id;
+	}
+	</script>
 </head>
 <body>
 	<section class="intro-section  ">
@@ -109,11 +138,12 @@
 			<!-- Portfolio Menu -->
         <div class="" data-wow-delay="200ms">
             <div class="text-center portfolio-menu">
-                <button class="btn font-yellow"><b>about me</b></button>
-                <button class="btn font-yellow"><b>work experience</b></button>
-                <button class="btn font-yellow"><b>projects portfolio</b></button>
-								<button class="btn font-yellow"><b>education</b></button>
-                <button class="btn font-yellow"><b>technical skills</b></button>
+                <button class="btn font-yellow" onclick="scrollA()"><b>about me</b></button>
+<button class="btn font-yellow" onclick="scrollS()"><b>skills</b>
+								<button class="btn font-yellow" onclick="scrollW()"><b>work experience</b></button>
+                <button class="btn font-yellow" onclick="scrollP()"><b>projects portfolio</b></button>
+								<button class="btn font-yellow"onclick="scrollE()"><b>education</b></button>
+                <button class="btn font-yellow" onclick="scrollM()"><b>hobbies</b></button>
             </div>
         </div>
 
@@ -123,10 +153,10 @@
 
 	<section class="about-section section pt-5">
 		<div class="container">
-			<div class="row">
+			<div id="About" class="row">
 				<div class="col-sm-12 center-text">
 					<div class="heading ">
-						<h3><b>About me</b></h3>
+						<h3 ><b>About me</b></h3>
 						<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
 					</div>
 				</div><!-- col-sm-3 -->
@@ -140,7 +170,7 @@
 				<div class="col-sm-12 col-md-6">
 					<p class="margin-b-50">I’ve got a wide smile, and an optimistic
 						enthusiastic personality. I pride myself on my work ethic and self-displace.
-						Software development is my speciality.<br>I’m a very competent programmer.
+						Software development is my speciality.<br>I’m a highly reliable programmer.
 						Even more, I’ve learnt the importance of planning and structure.
 						I'm an efficient creative team member that can lucidly convey and break down
 						ideas.</p>
@@ -205,43 +235,58 @@
 
 	<section class="skills-section section pt-5">
 		<div class="container">
-			<div class="row">
+			<div id="Skills" class="row">
 				<div class="col-sm-12 center-text">
-					<div class="heading">
-						<h3><b>Technical Skills</b></h3>
+					<div  class="heading">
+						<h3 ><b>Technical Skills</b></h3>
 						<h6 class="font-lite-black"><b>I'M GOOD AT</b></h6>
 					</div>
 				</div><!-- col-sm-12 -->
 
-				<div class="col-sm-12 col-md-6">
-					<h4><b>HTML & CSS</b></h4>
-					<h6 class="expert">EXPERT</h6>
+				<div class="col-sm-12 col-md-4">
+					<h4><b>Programming Languages</b></h4>
+					<h6 class="expert">Professional</h6>
 
-					<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-						quis consequat nulla effi citur at.</p>
+					<p class="margin-tb-30">I have a natural talent for true computational thinking,
+						hence I easily explore new stacks for my projects.<br>
+						I have a<b class="font-yellow"> lengthy history of project</b> experience and education in programming
+						languages such as:</p>
 
 					<div class="line-progress margin-b-20" data-prog-percent=".90"><div></div>
-						<p class="progress-title"><b>HTML</b></p></div>
+						<p class="progress-title"><b>C#, Java, JavaScript, Python, Haskell</b></p></div>
 
 					<div class="line-progress margin-b-50" data-prog-percent=".85"><div></div>
-						<p class="progress-title"><b>CSS</b></p></div>
+						<p class="progress-title"><b>Unity, Play, Meteor, React, Swift</b></p></div>
 
 				</div><!-- col-md-6 -->
 
-				<div class="col-sm-12 col-md-6">
-					<h4><b>GRAPHIC DESIGN</b></h4>
-					<h6 class="expert">EXPERT</h6>
+				<div class="col-sm-12 col-md-4">
+					<h4><b>Project Managment</b></h4>
+					<h6 class="expert">Student</h6>
 
-					<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-						quis consequat nulla effi citur at.</p>
+					<p class="margin-tb-30">I'm a strong, adaptable team member that understands how to produce efficient teamwork.
+						Regardless of Project manager not being my ideal role, I have successful experience, and enjoy growing as one. </p>
 
-					<div class="line-progress margin-b-20" data-prog-percent=".97"><div></div>
-						<p class="progress-title"><b>PHOTOSHOP</b></p></div>
+					<div class="line-progress margin-b-20" data-prog-percent=".7"><div></div>
+						<p class="progress-title"><b>Documentation</b></p></div>
 
-					<div class="line-progress margin-b-50" data-prog-percent=".97"><div></div>
+					<div class="line-progress margin-b-50" data-prog-percent=".7"><div></div>
+						<p class="progress-title"><b>Planning and Sequencing</b></p></div>
+
+				</div><!-- col-md-6 -->
+				<div class="col-sm-12 col-md-4">
+					<h4><b>Graphic Design</b></h4>
+					<h6 class="expert">well-versed</h6>
+
+					<p class="margin-tb-30">I developed my graphics skills developing graphic assets for
+					my Game & App Development.</p>
+					<div class="line-progress margin-b-20" data-prog-percent=".90"><div></div>
 						<p class="progress-title"><b>ILLUSTRATOR</b></p></div>
+
+					<div class="line-progress margin-b-20" data-prog-percent=".90"><div></div>
+						<p class="progress-title"><b>UX & INTERFACE DESIGN</b></p></div>
+					<div class="line-progress margin-b-50" data-prog-percent=".90"><div></div>
+							<p class="progress-title"><b>UNITY2D ANIMATION</b></p></div>
 
 				</div><!-- col-md-6 -->
 			</div><!-- row -->
@@ -251,7 +296,7 @@
 
 	<section class="experience-section section">
 		<div class="container">
-			<div class="row">
+			<div id="Work" class="row">
 				<div class="col-sm-12 col-md-3">
 					<div class="heading">
 						<h3><b>Work Experience</b></h3>
@@ -261,33 +306,35 @@
 
 				<div class="col-sm-12 col-md-9">
 					<div class="experience margin-b-50">
-						<h4><b>JUNIOR PROJECT MANAGER</b></h4>
-						<h5 class="font-yellow"><b>DESIGN STUDIO</b></h5>
-						<h6 class="font-lite-black margin-t-10">MARCH 2015 - PRESENT</h6>
-						<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-						<ul class="list margin-b-30">
-							<li>Duis non volutpat arcu, eu mollis tellus.</li>
-							<li>Quis consequat nulla effi citur at.</li>
-							<li>Sed finibus aliquam neque sit.</li>
-						</ul>
+						<h4><b>Software Developer</b></h4>
+						<h5 class="font-yellow"><b>NHS ALDER HEY</b></h5>
+						<h6 class="font-lite-black margin-t-10">JUNE 2019 - DEC 2020</h6>
+						<p class="margin-tb-30">Under the NHS, I have finished an 8 weeks summer placement
+							to develop any innovative projects requiring prototyping.
+							For 3 years now, I’ve continued to take on projects during my studies,
+							exploring techniques and languages to broaden my experiences, as well as skills.</p>
+
 					</div><!-- experience -->
 
 					<div class="experience margin-b-50">
-						<h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
-						<h5 class="font-yellow"><b>DESIGN & WEB STUDIO</b></h5>
-						<h6 class="font-lite-black margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
-						<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-						<ul class="list">
-							<li>Duis non volutpat arcu, eu mollis tellus.</li>
-							<li>Quis consequat nulla effi citur at.</li>
-							<li>Sed finibus aliquam neque sit.</li>
-						</ul>
+						<h4><b>ICT Technician Apprenticeship</b></h4>
+						<h5 class="font-yellow"><b>DMK</b></h5>
+						<h6 class="font-lite-black margin-t-10">2016 - 2017</h6>
+						<p class="margin-tb-30">For a year, I did a part time course that included
+							 getting a Level 3 in ICT, taking on the role of receptionist.
+							 This consisted of interacting with customers and writing up
+							 detailed reports on what the client wants. Once trained,
+							 I began to assist the main technicians in fixing the clients computers.
+							 Working with this company allowed me to learn the hardware
+							 that makes up all these devices, their commonalities and differences.</p>
+					</div><!-- experience -->
+
+					<div class="experience margin-b-50">
+						<h4><b>Part-time Jobs</b></h4>
+						<h5 class="font-yellow"><b>Freelancing, IKEA, Wetherspoons, Asda</b></h5>
+						<h6 class="font-lite-black margin-t-10">2015 - 2019</h6>
+						<p class="margin-tb-30">I've always had a part-time job since I was 16,
+						only recently have I prioritised freelancing sofware development jobs</p>
 					</div><!-- experience -->
 
 				</div><!-- col-sm-9 -->
@@ -297,7 +344,7 @@
 
 	<section class="portfolio-section section center-text">
 		<div class="container">
-			<div class="row">
+			<div id="Port" class="row">
 				<div class="col-sm-12">
 					<div class="heading h-left">
 						<h3><b>Portfolio</b></h3>
@@ -357,12 +404,54 @@
 						<img src="images/portfolio-20-400x400.jpg" alt=""></a>
 				</div><!-- p-item -->
 
+					<div class="text-left left-align left-text align-text  col-sm-12 col-md-12">
+					<br>
+				<p class="margin-b-30 ">I’m always developing both my programming skills and leadership skills. I’ve have partaken in many projects and competitions. I would love to show you all that I’ve done, but here are a few projects demonstrating my experience.<br>
+</p>
+<b class="font-yellow"> •	Young Enterprise Competition <br>
+<p class="margin-b-30 ">I found I excelled in operation management.
+	I’ve always been able to plan and execute concurrent operations.
+	They’ve helped me develop my skills as a
+	<b class="font-yellow">computer scientist, team player and Leader.</b>
+</p>
+<b class="font-yellow"> •	Budgeting app - Bubble Budget<br>
+<p class="margin-b-30 ">I’ve developed a savings app in <b class="font-yellow">C# and Java.</b>
+	This project was truly more realistic and enjoyable,
+	since I wanted to get a taste of what is was like to be a software developer.
+	 I had a client that wanted an enjoyable, appealing savings app.
+	 Here I learnt how to better identify requirements and success criteria.
+	I went through the proper procedure to develop a product that both my client and I could be proud of
+</p>
+<b class="font-yellow"> •	Facial Recognition Game – AI Projects<br>
+<p class="margin-b-30 ">
+	For my dictation I developed the Face – Controlled game from a previous project.
+	It was structured and displayed my previous knowledge of <b class="font-yellow">machine learning.</b>
+	Avoiding the purchases of software assets, I designed a UDP communication
+	between my <b class="font-yellow">Python</b> environment and Unity.
+</p>
+<b class="font-yellow"> •	Bafta Competition - Soap Run (Development of Mobile Game)<br>
+<p class="margin-b-30 ">
+	For the Bafta young game designer competition, I developed a<b class="font-yellow"> well-designed
+	game in C#</b> using the Unity engine. It’s a prime example of working in a team, playing to each
+	other’s strengths – mine being design of user interface and operational management.
+</p>
+<b class="font-yellow">	•	Web development project - Culure, Stores, Booking Apps (Ongoing)<br>
+<p class="margin-b-30 ">
+	Eager to put my new analysis and design skills to practice,
+	<b class="font-yellow" >I’ve started developing my own online store</b> and other apps,
+	going through the proper planning in order to meet a more professional standard.
+</p>
+
+</div>
+</div><!-- col-sm-6 -->
+
+
 			</div><!-- portfolioContainer -->
 		</div><!-- container -->
 	</section><!-- portfolio-section -->
 
 
-	<section class="education-section section">
+	<section id="Edu" class="education-section section">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 center-text">
@@ -376,34 +465,31 @@
 
 					<div class="education-wrapper margin-b-50">
 						<div class="education right">
-							<h4><b>MASTER DEGREE IN SCIENCE</b></h4>
-							<h5 class="font-yellow"><b>UCLA - SCIENCE AND ENGINEERING</b></h5>
-							<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2010(2 YEARS)</h6>
-							<p class="margin-t-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+							<h4><b>BSC Computer Science</b></h4>
+							<h5 class="font-yellow"><b>UNIVERSITY OF LIVERPOOL</b></h5>
+							<h6 class="font-lite-black margin-t-10">2017 - 2020</h6>
+							<p class="margin-t-10"><b class="font-yellow">Predicted: Strong 1st</b><br>By the end of the year I would have fully studied my chosen modules:
+								Advanced AI, Software engineering, Distributed Systems, Database Development
+								and Management, Computer networks and Complexity of algorithms.</p>
 						</div><!-- education -->
 
 						<div class="education left">
-							<h4><b>COURSE ON COMPUTER SCIENCE</b></h4>
-							<h5 class="font-yellow"><b>NEW YORK PUBLIC UNIVERSITY</b></h5>
-							<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2009(6 MONTHS)</h6>
-							<p class="margin-t-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+							<h4><b>A Levels</b></h4>
+							<h5 class="font-yellow"><b>The Sydney Russell 6<sup>th</sup> Form</b></h5>
+							<h6 class="font-lite-black margin-t-10">2015 - 2017</h6>
+							<p class="margin-t-10">4 A-levels achieving Computer Science: B<br>Mathematics: B<br>Business Studies: B<br>Physics: B.
+1 BTEC LEVEL 3 ICT : PPP
+ </p>
 						</div><!-- education -->
 
 						<div class="education right">
-							<h4><b>GRADUATED VALEDICTERIAN</b></h4>
-							<h5 class="font-yellow"><b>PUBLIC COLLEGE</b></h5>
-							<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2008(4 YEARS)</h6>
-							<p class="margin-t-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+							<h4><b>GSCEs</b></h4>
+							<h5 class="font-yellow"><b>The Sydney Russell School</b></h5>
+							<h6 class="font-lite-black margin-t-10">2010 - 2015</h6>
+							<p class="margin-t-10">11 GCSE’s Achieving: 1 A*, 4 A’s, 3 B’s.
+ </p>
 						</div><!-- education -->
+
 					</div><!-- education-wrapper -->
 				</div><!-- col-sm-9 -->
 			</div><!-- row -->
@@ -411,7 +497,34 @@
 
 	</section><!-- education-section -->
 
+	<section class="about-section section pt-5">
+		<div class="container">
+			<div id="More" class="row">
+				<div class="col-sm-12 center-text">
+					<div class="heading ">
+						<h3><b>Hobbies and Interests</b></h3>
+						<h6 class="font-lite-black"><b>more about me</b></h6>
+					</div>
+				</div><!-- col-sm-3 -->
+				<div class="col-sm-12 col-md-12">
+					<p class="margin-b-30 ">I’ve always been a bucket list type of person.<br>
+<b class="font-yellow">My proudest achievement is creating Fiesta Liverpool</b> while at university. It is a newly-successful promotional/events company. Our revenue coming from hosting events and selling tickets and VIP tables. It has been a fun journey so far. Instead of a part-time job, me and my friends k and thought of something more rememberable and enjoyable.
+</p>
+<p class="margin-b-30 "><b class="font-yellow">Digital art.</b> I’ve always been experimented with art, like digital art. In my free time I tend to come up with designs. It could be for anything. Or I design new UI for projects I’ve done or just have written in a note pad.
+</p>
+<p class="margin-b-30 "><b class="font-yellow">Summer Projects.</b> I enjoy a challenge. Over the summer I always make sure to do group projects that require skills outside my comfort zone. I’ve always been an innovative person. Teamwork. I am a team player and understand how beneficial unity is.
+</p>
+<p class="margin-b-30 ">
+<b class="font-yellow">Sports.</b> I’ve always been an active person. I played both basketball and handball competitively in school. I competed in the London youth games for both.
+</p>
+<p class="margin-b-30 ">
+<b class="font-yellow">Meditation.</b> I’ve learnt to meditate most morning. Took me some time to get into, but it became an enjoyable fun habit. Ever since, I’ve always kept me focused and productive.</p>
+</p>			</div><!-- col-sm-6 -->
 
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- about-section -->
 
 
 	<section class="radial-progress-section section">
@@ -480,6 +593,8 @@
 	<script src="common-js/jquery.fluidbox.min.js"></script>
 
 	<script src="common-js/scripts.js"></script>
+
+	<script src="main.js"></script>
 
 </body>
 </html>
